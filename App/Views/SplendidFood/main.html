@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Splendid Food</title>
+        <link rel="stylesheet" href="/assets/splendidfood/styles/style.min.css">
+        <link rel="icon" href="/assets/splendidfood/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/assets/splendidfood/favicon.ico" type="image/ico">
+        <script src="https://unpkg.com/vue@next"></script>
+    </head>
+    <body>
+        <div id="app">
+            {% include 'SplendidFood/navbar.html' %}
+            
+            {% block app %}{% endblock %}
+        </div>
+    </body>
+
+    <!-- <script src="/js/app.js"></script> -->
+    {% block scripts %}{% endblock %}
+    <script src="/assets/splendidfood/app.js"></script>
+</html>

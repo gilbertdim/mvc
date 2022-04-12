@@ -1,0 +1,42 @@
+{% extends 'Layouts/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+
+<div class="mt-3 py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-5">
+    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="./img/memememe..png" alt="">
+    <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+            <p class="text-lg text-black font-semibold">
+                Gilbert Dimaano
+            </p>
+            <p class="text-gray-500 font-medium">
+                Senior IT Programmer
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="flex">
+    <div class="grid-cols mx-auto">
+        <div class="mt-3 py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-5">
+            <a href="/splendidfood" class="w-32">
+                <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="/assets/splendidfood/favicon.ico" alt="">
+            </a>
+            <div class="text-center space-y-2 sm:text-left">
+                <div class="space-y-0.5">
+                    <p class="text-lg text-black font-semibold">
+                        <a href="/splendidfood">Splendid Food</a>
+                    </p>
+                    <p class="text-gray-500 font-medium">
+                        <a href="https://www.youtube.com/watch?v=FXpIoQ_rT_c&t=6172s">Vue.js Course for Beginners [2021 Tutorial]</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

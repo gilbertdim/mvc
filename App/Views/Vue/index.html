@@ -1,0 +1,28 @@
+{% extends 'Layouts/base.html' %}
+
+{% block title %}Vue{% endblock %}
+
+{% block body %}
+
+<login-form />
+
+{{ greeting }}
+
+<input @keyup.enter="greet('Gilbert')" v-model="greeting" />
+<hr>
+<div class="flex">
+    <div v-show="isVisibleRed" class="mt-1 mx-auto h-20 w-20 bg-red-500"></div>
+    <div v-show="isVisibleBlue" class="mt-1 mx-auto h-20 w-20 bg-blue-500"></div>
+    <div v-show="isVisibleYellow" class="mt-1 mx-auto h-20 w-20 bg-yellow-400"></div>
+</div>
+<div class="flex mt-2">
+    <button v-on:click="isVisibleRed = !isVisibleRed" class="w-36 hover:border-4 hover:border-red-700 hover:bg-red-500 hover:text-white px-3 p-1 rounded-md border border-red-500 mx-auto ">Toggle Red</button>
+    <button @click="toggleBlue" class="w-36 hover:border-4 hover:border-blue-700 hover:bg-blue-500 hover:text-white px-3 p-1 rounded-md border border-blue-500 mx-auto ">Toggle Blue</button>
+    <button v-on:click="toggleYellow" class="w-36 hover:border-4 hover:border-yellow-700 hover:bg-yellow-400 hover:text-white px-3 p-1 rounded-md border border-yellow-400 mx-auto ">Toggle Yellow</button>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="js/vue.js"></script>
+{% endblock %}

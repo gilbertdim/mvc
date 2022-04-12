@@ -1,0 +1,26 @@
+{
+    "name": "gilbertdim/mvc",
+    "type": "project",
+    "description": "MVC Framework from scratch",
+    "keywords": [
+        "Custom MVC Framework"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3.0",
+        "illuminate/database": "^8.63",
+        "symfony/var-dumper": "^5.3",
+        "twig/twig": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "App\\": "App/"
+        }
+    }
+}
